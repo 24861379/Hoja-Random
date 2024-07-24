@@ -18,9 +18,8 @@ header h1{
     text-align: center;
 }
 
-#filtros{
-    width: 150px;
-    /*top,right, bottom, left*/
+#Settings{
+    width: 270px;
     margin-top: 20px;
     margin-left: 10px;
     background-color: white;
@@ -30,9 +29,38 @@ header h1{
     padding: 10px;
 }
 
+#Settings select{
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+
+.Boton{
+    width: 170px;
+    padding: 10;
+    border: 1px solid #52b906;
+    font-size: 15px;
+    background: #52b906;
+    color:white;
+    border-radius: 70px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;   
+    position: absolute;
+    float: left;
+    margin-top: 15px ;
+    margin-left: 325px;
+}
+
+.Boton:hover{
+    background-color: #3f9204;
+    color: rgb(199, 192, 192);
+    transition: background 0.3s ease;
+}
+
 #HojaRandom{
     width: 700px;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 50px;
     background-color: white;
     border-radius: 0.5rem;
