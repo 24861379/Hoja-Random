@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script src="HojaR.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,39 +19,37 @@
 
     <div id="Settings">
         <h3>Configuración</h3>
-        <label for="Filas">Escoja la cantidad de filas</label>
+        <label for="Filas">Cantidad de filas</label>
         <select name="" id="Filas">
-            <option value="">0</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-            <option value="">6</option>
-            <option value="">7</option>
-            <option value="">8</option>
-            <option value="">9</option>
-            <option value="">10</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
         </select><br>
 
-        <label for="Filas">Escoja la cantidad de columnas</label>
-        <select name="" id="Filas">
-            <option value="">0</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-            <option value="">6</option>
+        <label for="Columnas">Cantidad de columnas</label>
+        <select name="" id="Columnas">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
         </select><br>
     </div>
 
-    <button class="Boton">
+    <button class="Boton" onclick="GenerarMatriz()">
         <p>¡Generar acordes!</p>
     </button>
 
     <div id="HojaRandom">
-        <p>Aquí se va a generar las notas aleatorias</p>
+        <!-- Aquí se va a generar las notas aleatorias -->
     </div>
 </body>
 </html>
