@@ -87,45 +87,7 @@ header h1{
     margin: 0 40px;
 }
 
-/*ajuste para disporitivo con ancho maximo de 768px*/
-@media (max-width: 768px) {
-
-
-    header h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    
-    #Settings {
-        width: 250px;
-        margin-left: 10px;
-    }
-
-    .Boton {
-        width: 150px;
-        margin-left: 45px;
-        margin-top: 169px;
-        margin-bottom: 10px;
-        background-color: #62d410;
-    }
-
-     .Boton:active{
-        background-color: #45a049;
-     }
-
-    #HojaRandom {
-        width: 650px;
-        margin:0 40px; 
-        margin-top: 80px;
-        margin-bottom: 20px;
-    }
-
-    #HojaRandom div span {
-        margin: 0 45px;
-    }
-}
-
-/*ajuste para disporitivo con ancho minimo de 480px*/
+/*Para dispositivos pequeños hasta 480px*/
 @media (max-width: 480px) {
 
     header h1 {
@@ -159,3 +121,78 @@ header h1{
         margin: 0 20px;
     }
 }
+
+/*ajuste para disporitivo con ancho maximo de 768px*/
+@media(min-width: 481px) and (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #Settings {
+        width: 250px;
+        margin-left: 10px;
+    }
+
+    .Boton {
+        width: 150px;
+        margin-left: 45px;
+        margin-top: 169px;
+        margin-bottom: 10px;
+        background-color: #62d410;
+    }
+
+    .Boton:active {
+        background-color: #45a049;
+    }
+
+    #HojaRandom {
+        width: 650px;
+        margin: 0 40px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    #HojaRandom div span {
+        margin: 0 45px;
+    }
+}
+
+ @media (min-width: 769px)and (max-width: 1024px){
+header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #Settings {
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    .Boton {
+        position: static;
+        width: 150px;
+        margin-left: 150px;
+        margin-top: 169px;
+        margin-bottom: 10px;
+        background-color: #62d410;
+    }
+
+    .Boton:active {
+        background-color: #45a049;
+    }
+
+    #HojaRandom {
+        width: 770px;
+        margin: 0 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        margin-right: 50px;
+    }
+
+    #HojaRandom div span {
+        margin: 0 45px;
+    }
+} 
