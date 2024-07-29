@@ -138,7 +138,7 @@ header h1{
     .Boton {
         position:static;
         width: 150px;
-        margin-left: 35px;
+        margin-left: 45px;
         margin-top: 169px;
         margin-bottom: 10px;
         background-color: #62d410;
@@ -149,12 +149,11 @@ header h1{
     }
 
     #HojaRandom {
-        width: 570px;
+        width: 650px;
         margin: 0 40px;
         margin-top: 10px;
         margin-bottom: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
     }
 
     #HojaRandom div span {
