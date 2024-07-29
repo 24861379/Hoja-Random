@@ -126,7 +126,7 @@ header h1{
 }
 
 /*ajuste para disporitivo con ancho minimo de 480px*/
-@media (min-width: 480px) {
+@media (max-width: 480px) {
 
     header h1 {
         font-size: 2rem;
