@@ -154,14 +154,15 @@ input[type="checkbox" i]#ABemoles {
     #HojaRandom {
         width: 320px;
         margin-top: 10px;
-        margin-left: 24px;
-        margin-right: 24px;
+        margin-left: 15px;
+        margin-right: 20px;
         margin-bottom: 10px;
+        padding: 15px;
     }
 
     #HojaRandom div span {
-        margin: 0 5px;
-        font-size: 14px;
+        margin: 5px 10px;
+        font-size: 29px;
     }
 }
 
