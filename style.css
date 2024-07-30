@@ -126,6 +126,7 @@ input[type="checkbox" i]#ABemoles {
 
 #HojaRandom div span {
     margin: 0 40px;
+    
 }
 
 /*Para dispositivos pequeños hasta 480px*/
@@ -159,7 +160,7 @@ input[type="checkbox" i]#ABemoles {
     }
 
     #HojaRandom div span {
-        margin: 0 20px;
+        margin: 0 10px;
     }
 }
 
