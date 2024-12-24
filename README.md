@@ -1,7 +1,6 @@
 # Hoja-Random
 
-<<<<<<< HEAD
-=======
+
 ## Descripción
 **Hoja-Random** es una herramienta web diseñada para ayudar a los estudiantes de música a ubicar las notas en el instrumento, estudiar acordes y realizar escalas de manera eficiente.
 
@@ -31,4 +30,3 @@ Para realizar este proyecto se usaron las siguientes tecnologías:
 
 ## Autor
 Soy Alejandro, creador de este proyecto, que nació de la necesidad de practicar con esta herramienta llamada **Hoja Random** sin tener que descargar varios PDFs.
->>>>>>> 4fe376474352a74f1658c6b0cd7af8c077e99d21
