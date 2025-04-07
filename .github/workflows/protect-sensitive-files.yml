@@ -1,0 +1,26 @@
+name: Block changes to README.md and LICENSE.txt
+
+on: [pull_request]
+
+jobs:
+  block-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Get list of changed files
+        id: file_changes
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          git diff --name-only origin/${{ github.base_ref }}...HEAD > changed_files.txt
+          cat changed_files.txt
+
+      - name: Block PR if sensitive files were changed
+        run: |
+          if grep -q -E '^README.md$|^LICENSE.txt$' changed_files.txt; then
+            echo "🚫 Cambios en archivos protegidos detectados (README.md o LICENSE.txt)"
+            exit 1
+          else
+            echo "✅ Archivos sensibles no modificados"
+          fi
