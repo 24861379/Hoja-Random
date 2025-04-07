@@ -30,3 +30,4 @@ Para realizar este proyecto se usaron las siguientes tecnologías:
 
 ## Autor
 Soy Alejandro, creador de este proyecto, que nació de la necesidad de practicar con esta herramienta llamada **Hoja Random** sin tener que descargar varios PDFs.
+⚠️ Este proyecto es personal. No está autorizado su uso, distribución o modificación sin permiso expreso del autor.
