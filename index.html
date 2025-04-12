@@ -3,62 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Arcchivo CSS-->
-    <link rel="stylesheet" href="style.css">
-    <title>Hoja Random</title>
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!--Arcchivo JS-->
-    <script src="HojaR.js" defer></script>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!--Arcchivo CSS-->
+    <link rel="stylesheet" href="styleLanding.css">
+    <title>Bienvenido</title>
 </head>
 <body>
-    <header>
-        <h1>Hoja Random</h1>
+    <header class="container-fluid gx-0">
+        <div class="row g-0">
+            <div class="col"> 
+                <h1>Título</h1>
+            </div>
+        </div>       
     </header>
 
-    <div id="Settings">
-       
-        <h3>Configuración</h3>
-        <label for="Filas">Cantidad de filas </label>
-        <select name="" id="Filas">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-        </select><br>
-
-        <label for="Columnas">Cantidad de columnas </label>
-        <select name="" id="Columnas">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select><br>
-
-        <label for="AMenores">Acordes menores </label>
-        <input type="checkbox" id="AMenores"><br>
-            
-        <label for="ASostenidos">Sostenidos (#)</label>
-        <input type="checkbox" id="ASostenidos"><br>
-            
-        <label for="ABemoles">Bemoles (b) </label>
-        <input type="checkbox" id="ABemoles">
-    </div>
-
-    <button class="Boton" onclick="GenerarMatriz()">
-        <p>¡Generar acordes!</p>
-    </button>
-
-    <div id="HojaRandom">
-        <!-- Aquí se va a generar las notas aleatorias -->
-    </div>
+    <main class="container-xxl py-4">
+        <div class="row gx-4 gy-3 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-5">
+                <a href="hojaRandom.html" class="text-decoration-none text-dark">
+                    <div class=" Contenedor-HR">
+                        <h4>Hoja Random</h4>
+                        <p>
+                            Genera acordes, notas y escalas de manera aleatoria para trabajar tu agilidad, reconocimiento de notas y familiaridad
+                            con diferentes patrones. Perfecto para practicar la ubicación en el instrumento, fortalecer el oído y mejorar la
+                            creatividad musical.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+                <a href="Grados.html" class="text-decoration-none text-dark">
+                    <div class=" Contenedor-Grados">
+                        <h4>¡Adivina el grado!</h4>
+                        <p>
+                            Adivina el grado de una escala aleatoria y selecciona la nota correcta. Practica identificando las notas y su posición
+                            dentro de la escala. Cada ejercicio te ayudará a fortalecer tu comprensión de los grados y la estructura de las escalas
+                            musicales.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
