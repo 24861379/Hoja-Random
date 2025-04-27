@@ -1,0 +1,7 @@
+Copyright (c) 2025 Alejandro Aponte. All rights reserved.
+
+This software and all its source code are the intellectual property of Alejandro Aponte.
+
+Unauthorized copying, modification, distribution, or use of any part of this project is strictly prohibited without express written permission from the author.
+
+This project is for personal, non-commercial use only. No warranties are provided. Use at your own risk.
