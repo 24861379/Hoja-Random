@@ -10,8 +10,6 @@
 | **B**  | B         | C#m        | D#m         | E          | F#        | G#m        | A#°               |
 | **F#** | F#        | G#m        | A#m         | B          | C#        | D#m        | E#°               |
 | **C#** | C#        | D#m        | E#m         | F#         | G#        | A#m        | B#°               |
-
-### No tener en cuenta
 | **F**  | F         | Gm         | Am          | Bb         | C         | Dm         | E°                |
 | **Bb** | Bb        | Cm         | Dm          | Eb         | F         | Gm         | A°                |
 | **Eb** | Eb        | Fm         | Gm          | Ab         | Bb        | Cm         | D°                |
@@ -30,8 +28,6 @@
 | **Ab** | Ab        | Bbm        | Cm          | Db         | Eb        | Fm         | G°                |
 | **Db** | Db        | Ebm        | Fm          | Gb         | Ab        | Bbm        | C°                |
 | **Gb** | Gb        | Abm        | Bbm         | Cb         | Db        | Ebm        | F°                |
-
-### No tener en cuenta
 | **Cb** | Cb        | Dbm        | Ebm         | Fb         | Gb        | Abm        | Bb°               |
 | **E**  | E         | F#m        | G#m         | A          | B         | C#m        | D#°               |
 | **A**  | A         | Bm         | C#m         | D          | E         | F#m        | G#°               |
