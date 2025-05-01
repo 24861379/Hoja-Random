@@ -1,5 +1,5 @@
 var grados = ["I", "ii", "iii", "IV", "V", "vi", "vii°",];
-var notas = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
+var notas = ["C", "C#", "Db", "D", "D#", "Eb", "E", "F", "F#", "Gb", "G", "G#", "Ab", "A", "Bb", "B"];
 // Función para generar una pregunta aleatoria
 function generarPregunta() {
     var grado = grados[Math.floor(Math.random() * grados.length)];
