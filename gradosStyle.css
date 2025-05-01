@@ -9,9 +9,10 @@ body {
 
 /* Banner superior */
 .banner-large {
-    background-color: #364552; /* Color de fondo */
-    color: white;/* Color del texto */
+    background-color: white; /* Color de fondo */
+    color: black;/* Color del texto */
     padding: 1rem;/* Espaciado interno */
+    border: black 1px solid;/* Borde */
     border-radius: 10px;/* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* Sombra */
     width: 83%;/* Ancho del banner */
@@ -21,9 +22,10 @@ body {
 
 /* Banner inferior */
 .banner-small {
-    background-color: #6c757d;/* Color de fondo */
-    color: white;/* Color del texto */
+    background-color: white;/* Color de fondo */
+    color: black;
     padding: 1rem;/* Espaciado interno */
+    border: black 1px solid;/* Borde */
     border-radius: 10px;/* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* Sombra */
     height:400px;
@@ -34,6 +36,11 @@ body {
 .row.my-4 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+#btnInicio{
+    width: 120px;
+    margin: 1rem;
 }
 
 /* Adaptabilidad */

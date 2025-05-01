@@ -14,7 +14,8 @@
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <!--Archivo CSS-->
     <link rel="stylesheet" href="gradosStyle.css">
-    
+    <script src="dist/preguntas.js" defer></script>
+
     <title>Grados</title>
 </head>
 <body>
@@ -22,13 +23,17 @@
     <div class="container-fluid">
         <!-- Banner Superior -->
         <div class="row justify-content-center mt-2">
-            <div class="col-10 col-md-8 banner-large">
-                <h2 class="text-center">Banner Superior</h2>
+            <div class="col-10 col-md-8 banner-large" id="banner-superior">
+                <h2 class="text-center" id="pregunta">¡Preciona el botón para iniciar!</h2>
             </div>
         </div>
 
+        <div class="row justify-content-center">
+            <button id="btnInicio" class="btn btn-primary">¡Comenzar!</button>
+        </div>
+
         <!-- Espaciado entre banners -->
-        <div class="row my-4"></div>
+        <!-- <div class="row my-4"></div> -->
 
         <!-- Banner Inferior -->
         <div class="row justify-content-center">
