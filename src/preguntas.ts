@@ -1,5 +1,5 @@
 let grados: string[] = ["I", "ii", "iii", "IV", "V", "vi", "vii°",]
-let notas: string[] = ["C", "Db", "D", "Eb","E", "F", "Gb", "G", "Ab", "A", "Bb", "B"]
+let notas: string[] = ["C", "C#", "Db", "D", "D#", "Eb", "E", "F", "F#", "Gb", "G", "G#", "Ab", "A", "Bb", "B"]
 
 // Función para generar una pregunta aleatoria
 function generarPregunta(): string {

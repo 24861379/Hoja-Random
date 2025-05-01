@@ -33,14 +33,21 @@ body {
 }
 
 /* Espaciado entre banners */
-.row.my-4 {
+/* .row.my-4 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
+} */
 
-#btnInicio{
+.btn, .btn-primary{
     width: 120px;
     margin: 1rem;
+    background-color: #52b906;
+}
+
+.btn-primary:hover,
+.btn-primary:focus:active {
+    background-color: #45a049;
+    border-color: #45a049;
 }
 
 /* Adaptabilidad */
