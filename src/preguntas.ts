@@ -5,7 +5,7 @@ let notas: string[] = ["C", "C#", "Db", "D", "D#", "Eb", "E", "F", "F#", "Gb", "
 function generarPregunta(): string {
     const grado = grados[Math.floor(Math.random() * grados.length)];
     const nota = notas[Math.floor(Math.random() * notas.length)];
-    return `¿Cuál es el grado ${grado} de la escala de ${nota}?`;
+    return `¿Cuál es el ${grado} grado de la escala de ${nota}?`;
 }
 
 // Función para manejar el clic en el botón de inicio
