@@ -1,4 +1,4 @@
-import { nodo } from "./nodo";
+import { nodo } from "./nodo.js";
 
 export class escalaC {
     raiz: nodo;

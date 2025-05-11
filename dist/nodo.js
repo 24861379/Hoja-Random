@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.nodo = void 0;
-class nodo {
+export class nodo {
     constructor(nombreChord, grado) {
         this.nombreChord = nombreChord;
         this.grado = grado;
@@ -9,5 +6,4 @@ class nodo {
         this.derecha = null;
     }
 }
-exports.nodo = nodo;
 //# sourceMappingURL=nodo.js.map
