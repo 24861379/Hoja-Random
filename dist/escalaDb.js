@@ -1,16 +1,16 @@
 import { nodo } from "./nodo.js";
-export class escalaC {
+export class escalaDb {
     constructor() {
         this.raiz = this.crearArbol();
     }
     crearArbol() {
-        const nodo1 = new nodo("C", "I");
-        const nodo2 = new nodo("Dm", "ii");
-        const nodo3 = new nodo("Em", "iii");
-        const nodo4 = new nodo("F", "IV");
-        const nodo5 = new nodo("G", "V");
-        const nodo6 = new nodo("Am", "vi");
-        const nodo7 = new nodo("B°", "vii°");
+        const nodo1 = new nodo("Db", "I");
+        const nodo2 = new nodo("Ebm", "ii");
+        const nodo3 = new nodo("Fm", "iii");
+        const nodo4 = new nodo("Gb", "IV");
+        const nodo5 = new nodo("Ab", "V");
+        const nodo6 = new nodo("Bbm", "vi");
+        const nodo7 = new nodo("C°", "vii°");
         nodo2.izquierda = nodo1;
         nodo2.derecha = nodo3;
         nodo6.izquierda = nodo5;
@@ -44,4 +44,4 @@ export class escalaC {
         }
     }
 }
-//# sourceMappingURL=escalaC.js.map
+//# sourceMappingURL=escalaDb.js.map

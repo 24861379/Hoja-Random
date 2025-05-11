@@ -14,7 +14,7 @@
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <!--Archivo CSS-->
     <link rel="stylesheet" href="gradosStyle.css">
-    <script src="dist/preguntas.js" defer></script>
+    <script src="dist/preguntas.js" type="module" defer></script>
 
     <title>Grados</title>
 </head>
@@ -32,13 +32,20 @@
             <button id="btnInicio" class="btn btn-primary">¡Comenzar!</button>
         </div>
 
+<!-- Mostrar mensajes de error y acertación -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-10 col-md-8">
+                <div id="mensaje" class="alert text-center" style="display: none;"></div>
+            </div>
+        </div>
         <!-- Espaciado entre banners -->
         <!-- <div class="row my-4"></div> -->
 
         <!-- Banner Inferior -->
         <div class="row justify-content-center">
-            <div class="col-12 col-md-10 banner-small">
-                <h2 class="text-center">Banner Inferior</h2>
+            <div class="col-12 col-md-10 banner-small" id="banner-inferior">
+                <div id="opciones" class="d-flex flex-wrap justify-content-center"></div>
+                <h2 class="text-center"></h2>
             </div>
         </div>
     </div>
