@@ -3,7 +3,7 @@ import { escalaCb } from "./escalaCb.js";
 import { escalaD } from "./escalaD.js";
 import { escalaDb } from "./escalaDb.js";
 import { escalaGb } from "./escalaGb.js";
-import { escalaCs } from "./escalaC#.js";
+import { escalaCs } from "./escalaCs.js";
 import { escalaF } from "./escalaF.js";
 import { escalaBb } from "./escalaBb.js";
 import { escalaEb } from "./escalaEb.js";

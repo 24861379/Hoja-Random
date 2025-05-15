@@ -3,14 +3,26 @@ import { escalaCb } from "./escalaCb.js";
 import { escalaD } from "./escalaD.js";
 import { escalaDb } from "./escalaDb.js";
 import { escalaGb } from "./escalaGb.js";
+import { escalaCs } from "./escalaCs.js";
+import { escalaF } from "./escalaF.js";
+import { escalaBb } from "./escalaBb.js";
+import { escalaEb } from "./escalaEb.js";
+import { escalaAb } from "./escalaAb.js";
+import { escalaG } from "./escalaG.js";
 let grados = ["I", "ii", "iii", "IV", "V", "vi", "vii°",];
-let notas = ["C", "Cb", "D", "Db", "Gb",];
+let notas = ["C", "Cb", "D", "Db", "Gb", "C#", "F", "Bb", "Eb", "Ab", "G"];
 const arboles = {
     "C": new escalaC(),
     "Cb": new escalaCb(),
     "D": new escalaD(),
     "Db": new escalaDb(),
     "Gb": new escalaGb(),
+    "C#": new escalaCs(),
+    "F": new escalaF(),
+    "Bb": new escalaBb(),
+    "Eb": new escalaEb(),
+    "Ab": new escalaAb(),
+    "G": new escalaG()
 };
 function generarPregunta() {
     const grado = grados[Math.floor(Math.random() * grados.length)];
