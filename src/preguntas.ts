@@ -3,12 +3,13 @@ import { escalaCb } from "./escalaCb.js";
 import { escalaD } from "./escalaD.js";
 import { escalaDb } from "./escalaDb.js";
 import { escalaGb } from "./escalaGb.js";
+import {escalaG} from "./escalaG.js";
 
 
 
 let grados: string[] = ["I", "ii", "iii", "IV", "V", "vi", "vii°",]
 //let notas: string[] = ["C", "C#", "Db", "D", "D#", "Eb", "E", "F", "F#", "Gb", "G", "G#", "Ab", "A", "Bb", "B"]
-let notas: string[] = ["C", "Cb", "D", "Db","Gb",]//PRUEBA
+let notas: string[] = ["C", "Cb", "D", "Db","Gb","G"]//PRUEBA
 
 //crea un mapeo de los árboles de lasescalas
 const arboles: { [key: string]: any } = {
@@ -17,6 +18,7 @@ const arboles: { [key: string]: any } = {
     "D": new escalaD(),
     "Db": new escalaDb(),
     "Gb": new escalaGb(),
+    "G": new escalaG()
     // Agrega más árboles aquí cuando estén implementados
 };
 
