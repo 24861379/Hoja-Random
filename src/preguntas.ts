@@ -50,7 +50,7 @@ function generarOpciones(correcta: string): string[] {
     const opciones = new Set<string>();
     opciones.add(correcta); // Agrega la respuesta correcta
 
-    while (opciones.size < 5) {
+    while (opciones.size < 6) {
         //const gradoAleatorio = grados[Math.floor(Math.random() * grados.length)];
         const notaAleatoria = notas[Math.floor(Math.random() * notas.length)];
         const opcion = notaAleatoria;

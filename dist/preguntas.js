@@ -40,7 +40,7 @@ function generarPregunta() {
 function generarOpciones(correcta) {
     const opciones = new Set();
     opciones.add(correcta);
-    while (opciones.size < 5) {
+    while (opciones.size < 6) {
         const notaAleatoria = notas[Math.floor(Math.random() * notas.length)];
         const opcion = notaAleatoria;
         opciones.add(opcion);
