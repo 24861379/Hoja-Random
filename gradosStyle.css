@@ -53,7 +53,7 @@ body {
 @media (max-width: 768px) {
     .banner-small {
         width: auto;
-        max-width: 80%;/* más ancho que el inferior */
+        max-width: 90%;/* más ancho que el inferior */
         padding: 1.5rem;
         margin: 1rem auto;
         box-sizing: border-box;
