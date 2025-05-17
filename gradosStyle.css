@@ -9,27 +9,26 @@ body {
 
 /* Banner superior */
 .banner-large {
-    background-color: white; /* Color de fondo */
-    color: black;/* Color del texto */
-    padding: 1rem;/* Espaciado interno */
-    border: black 1px solid;/* Borde */
-    border-radius: 10px;/* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* Sombra */
-    width: 83%;/* Ancho del banner */
-    height: 150px;/* altura del banner */
-    margin: 0 auto;/* Centrado horizontal */
+    background-color: white; 
+    color: black;
+    padding: 1rem;
+    border: black 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    /* height: 150px; */
+    margin: 0 auto;
 }
 
 /* Banner inferior */
 .banner-small {
-    background-color: white;/* Color de fondo */
+    background-color: white;
     color: black;
-    padding: 1rem;/* Espaciado interno */
-    border: black 1px solid;/* Borde */
-    border-radius: 10px;/* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* Sombra */
-    height:400px;
-    width: 70%;
+    padding: 1rem;
+    border: black 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
 }
 
 /* Espaciado entre banners */
@@ -53,13 +52,25 @@ body {
 /* Adaptabilidad */
 @media (max-width: 768px) {
     .banner-small {
-        padding: 1.5rem;/* Reducir espaciado en pantallas pequeñas */
-        max-width: 95%;/* Más ancho en pantallas pequeñas */
+        width: auto;
+        max-width: 90%;/* más ancho que el inferior */
+        padding: 1.5rem;
+        margin: 1rem auto;
+        box-sizing: border-box;
+        word-break: break-word;
+        /* padding: 1.5rem; *//* Reducir espaciado en pantallas pequeñas */
+        /* max-width: 95%; *//* Más ancho en pantallas pequeñas */
     }
 
     .banner-large {
-        padding: 2rem;/* Reducir altura en pantallas pequeñas */
-        max-width: 85%;/* Más estrecho en pantallas pequeñas */
-        margin-bottom: 2rem; /* Espaciado adicional en pantallas pequeñas */
+        width: auto;
+        max-width: 75%;/* un poco más estrecho que el superior */
+        padding: 1rem;
+        margin: 1rem auto;
+        box-sizing: border-box;
+        word-break: break-word;
+        /* padding: 2rem; *//* Reducir altura en pantallas pequeñas */
+        /* max-width: 85%; *//* Más estrecho en pantallas pequeñas */
+        /* margin-bottom: 2rem; */ /* Espaciado adicional en pantallas pequeñas */
     }
 }
