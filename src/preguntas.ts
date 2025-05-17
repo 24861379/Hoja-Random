@@ -16,8 +16,14 @@ import { escalaFs } from "./escalaFs.js";
 
 
 
-let grados: string[] = ["I", "ii", "iii", "IV", "V", "vi", "vii°",]
+let grados: string[] = ["ii", "iii", "IV", "V", "vi", "vii°",]
 let notas: string[] = ["Cb", "C", "C#", "Db", "D", "Eb", "E", "F", "F#", "Gb", "G", "Ab", "A", "Bb", "B"]
+let acordesDisponibles: string[] = [
+    "C", "C#", "Cb", "D", "D#", "Db", "E", "Eb", "F", "F#", "Gb", "G", "G#", "Ab", "A", "A#", "Bb", "B", "B#",
+    "Cm", "C#m", "Cbm", "Dm", "D#m", "Dbm", "Em", "Ebm", "Fm", "F#m", "Gm", "G#m", "Abm", "Am", "A#m", "Bbm", "Bm", "B#m",
+    "C°", "C#°", "D°", "D#°", "E°", "F°", "F#°", "G°", "G#°", "A°", "A#°", "B°", "B#°"
+];
+  
 //let notas: string[] = ["C", "Cb", "D", "Db","Gb","C#","F","Bb","Eb","Ab", "G"]//PRUEBA
 
 //crea un mapeo de los árboles de lasescalas
@@ -27,7 +33,7 @@ const arboles: { [key: string]: any } = {
     "D": new escalaD(),
     "Db": new escalaDb(),
     "Gb": new escalaGb(),
-    "Cs": new escalaCs(),
+    "C#": new escalaCs(),
     "F": new escalaF(),
     "Bb": new escalaBb(),
     "Eb": new escalaEb(),
@@ -36,7 +42,7 @@ const arboles: { [key: string]: any } = {
     "A": new escalaA(),
     "E": new escalaE(),
     "B": new escalaB(),     
-    "Fs": new escalaFs()
+    "F#": new escalaFs()
 };
 
 // Función para generar una pregunta aleatoria
@@ -52,12 +58,21 @@ function generarOpciones(correcta: string): string[] {
 
     while (opciones.size < 6) {
         //const gradoAleatorio = grados[Math.floor(Math.random() * grados.length)];
-        const notaAleatoria = notas[Math.floor(Math.random() * notas.length)];
-        const opcion = notaAleatoria;
-        opciones.add(opcion); // Asegura que no haya duplicados
+        const opcionAleatoria = acordesDisponibles[Math.floor(Math.random() * acordesDisponibles.length)];
+        /* const opcion = notaAleatoria; */
+        opciones.add(opcionAleatoria); // Asegura que no haya duplicados
     }
 
-    return Array.from(opciones);
+    // Barajar las opciones con Fisher-Yates
+    //para el futuro librería lodash.shuffle
+    const opcionesArray = Array.from(opciones);
+    for (let i = opcionesArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [opcionesArray[i], opcionesArray[j]] = [opcionesArray[j], opcionesArray[i]];
+     }
+
+    return opcionesArray;
+
 }
 
 function mostrarOpciones(opciones: string[], correcta: string): void {
@@ -110,13 +125,22 @@ function iniciarJuego(): void {
         bannerSuperior.textContent = pregunta;
 
         // Extraer la nota y el grado de la pregunta
-        const nota = pregunta.match(/escala de (\w+)/)?.[1];
+        const nota = pregunta.match(/escala de (([A-G])[#b♯♭]?)/)?.[1];
 
         if (nota && arboles[nota]) {
             const arbol = arboles[nota];
-            const correcta = `${nota}`; // Respuesta correcta
-            const opciones = generarOpciones(correcta); // Generar opciones
-            mostrarOpciones(opciones, correcta); // Mostrar opciones en el banner inferior
+            const grado = pregunta.match(/el (.+?) grado/)?.[1];// Extraer el grado de la pregunta
+            console.log("Nota extraída:", nota);
+
+            if (grado) { 
+                const resultado = arbol.buscar(grado); // Buscar el acorde en el árbol
+                console.log("Resultado de búsqueda:", resultado); 
+                const match = resultado.match(/El acorde: (.+?) es correcto/);//extrae el acorde correcto
+                const correcta = match ? match[1] : "Error";
+
+                const opciones = generarOpciones(correcta); // Generar opciones
+                mostrarOpciones(opciones, correcta); // Mostrar opciones en el banner inferior
+            }
         } /* else {
             console.log("No se encontró un árbol para la nota especificada.");
         } */

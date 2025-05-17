@@ -36,12 +36,10 @@ export class escalaFs {
         if (grado === nodo.grado) {
             return `El acorde: ${nodo.nombreChord} es correcto`;
         }
-        if (grado < nodo.grado) {
-            return this.buscarRec(nodo.izquierda, grado);
-        }
-        else {
-            return this.buscarRec(nodo.derecha, grado);
-        }
+        const izquierda = this.buscarRec(nodo.izquierda, grado);
+        if (!izquierda.includes("no corresponde"))
+            return izquierda;
+        return this.buscarRec(nodo.derecha, grado);
     }
 }
 //# sourceMappingURL=escalaFs.js.map

@@ -29,32 +29,32 @@ export class escalaFs {
     }
 
     inOrden(nodo: nodo | null): void {
-        if(nodo !== null) {
-        this.inOrden(nodo.izquierda);
-        console.log(`Grado: [${nodo.grado}] -> Acorde: ${nodo.nombreChord}`);
-        this.inOrden(nodo.derecha);
+        if (nodo !== null) {
+            this.inOrden(nodo.izquierda);
+            console.log(`Grado: [${nodo.grado}] -> Acorde: ${nodo.nombreChord}`);
+            this.inOrden(nodo.derecha);
+        }
     }
-}
 
-buscar(grado: string): string {
-    return this.buscarRec(this.raiz, grado);
-}
+    buscar(grado: string): string {
+        return this.buscarRec(this.raiz, grado);
+    }
 
     private buscarRec(nodo: nodo | null, grado: string): string {
-    if (nodo === null) {
-        return "El grado no corresponde a ningún acorde";
-    }
+        if (nodo === null) {
+            return "El grado no corresponde a ningún acorde";
+        }
 
-    if (grado === nodo.grado) {
-        return `El acorde: ${nodo.nombreChord} es correcto`;
-    }
+        if (grado === nodo.grado) {
+            return `El acorde: ${nodo.nombreChord} es correcto`;
+        }
 
-    if (grado < nodo.grado) {
-        return this.buscarRec(nodo.izquierda, grado);
-    } else {
+        // Buscar en ambos lados
+        const izquierda = this.buscarRec(nodo.izquierda, grado);
+        if (!izquierda.includes("no corresponde")) return izquierda;
+
         return this.buscarRec(nodo.derecha, grado);
     }
-}
 }
 
 // Prueba
