@@ -37,8 +37,8 @@ main {
 
 .Contenedor-HR p,
 .Contenedor-Grados p{
-    margin-left: 30% ;
-    text-align: left;
+    /* margin-left: 30% ; */
+    text-align: center;
     /* padding: 0 10px 10px 10px; */
 }
 
@@ -53,6 +53,13 @@ a .Contenedor-Grados:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
+}
+
+img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    
 }
 
 
