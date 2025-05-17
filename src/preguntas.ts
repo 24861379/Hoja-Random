@@ -57,7 +57,6 @@ function generarOpciones(correcta: string): string[] {
     opciones.add(correcta); // Agrega la respuesta correcta
 
     while (opciones.size < 6) {
-        //const gradoAleatorio = grados[Math.floor(Math.random() * grados.length)];
         const opcionAleatoria = acordesDisponibles[Math.floor(Math.random() * acordesDisponibles.length)];
         /* const opcion = notaAleatoria; */
         opciones.add(opcionAleatoria); // Asegura que no haya duplicados
@@ -89,9 +88,9 @@ function mostrarOpciones(opciones: string[], correcta: string): void {
             boton.addEventListener("click", () => {
                 if (opcion === correcta) {
                     mostrarMensaje("¡Correcto!", true);
-                } else {
+                } /* else {
                     mostrarMensaje("Incorrecto. Intenta de nuevo.", false); // Muestra mensaje de error
-                }
+                } */
             });
 
             contenedorOpciones.appendChild(boton);
@@ -141,9 +140,7 @@ function iniciarJuego(): void {
                 const opciones = generarOpciones(correcta); // Generar opciones
                 mostrarOpciones(opciones, correcta); // Mostrar opciones en el banner inferior
             }
-        } /* else {
-            console.log("No se encontró un árbol para la nota especificada.");
-        } */
+        } 
     }
 }
 
