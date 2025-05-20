@@ -56,7 +56,7 @@ function generarOpciones(correcta: string): string[] {
     const opciones = new Set<string>();
     opciones.add(correcta); // Agrega la respuesta correcta
 
-    while (opciones.size < 6) {
+    while (opciones.size < 3) {
         const opcionAleatoria = acordesDisponibles[Math.floor(Math.random() * acordesDisponibles.length)];
         /* const opcion = notaAleatoria; */
         opciones.add(opcionAleatoria); // Asegura que no haya duplicados

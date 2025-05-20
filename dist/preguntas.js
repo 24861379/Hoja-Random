@@ -45,7 +45,7 @@ function generarPregunta() {
 function generarOpciones(correcta) {
     const opciones = new Set();
     opciones.add(correcta);
-    while (opciones.size < 6) {
+    while (opciones.size < 3) {
         const opcionAleatoria = acordesDisponibles[Math.floor(Math.random() * acordesDisponibles.length)];
         opciones.add(opcionAleatoria);
     }
@@ -67,9 +67,6 @@ function mostrarOpciones(opciones, correcta) {
             boton.addEventListener("click", () => {
                 if (opcion === correcta) {
                     mostrarMensaje("¡Correcto!", true);
-                }
-                else {
-                    mostrarMensaje("Incorrecto. Intenta de nuevo.", false);
                 }
             });
             contenedorOpciones.appendChild(boton);

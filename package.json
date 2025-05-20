@@ -1,0 +1,22 @@
+{
+  "name": "proyectopruebas",
+  "version": "1.0.0",
+  "description": "**Hoja-Random** es una herramienta web diseñada para ayudar a los estudiantes de música a ubicar las notas en el instrumento, estudiar acordes y realizar escalas de manera eficiente.",
+  "main": "HojaR.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/24861379/Hoja-Random.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/24861379/Hoja-Random/issues"
+  },
+  "homepage": "https://github.com/24861379/Hoja-Random#readme",
+  "dependencies": {
+    "cypress": "^14.3.3"
+  }
+}
