@@ -129,6 +129,22 @@ input[type="checkbox" i]#ABemoles {
     
 }
 
+#HojaRandom table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#HojaRandom td {
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
 /*Para dispositivos pequeños hasta 480px*/
 @media (max-width: 480px) {
 
