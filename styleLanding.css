@@ -15,8 +15,21 @@ header {
     background-color: #364552;
     color: white;
     /*Arriba/abajo izquierda/derecha */
-    padding: 2rem 2rem;
+    padding: 6rem 2rem;
     margin-bottom: 3rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;/* centra verticalmente */
+    left: 73px;/* separación desde la izquierda */
+    transform: translateY(-50%);/* ajusta para que quede centrado */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
 }
 
 header h1 {
