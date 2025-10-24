@@ -1,82 +1,195 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-    font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth; 
 }
 
 body {
-    /*margin: 0;*/
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #efefef;
-    
+  background-color: #2C2C2C;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
 }
 
+/* ========== HEADER ========== */
 header {
-    background-color: #364552;
-    color: white;
-    /*Arriba/abajo izquierda/derecha */
-    padding: 6rem 2rem;
-    margin-bottom: 3rem;
-    position: relative;
+  background-color: #000000;
 }
 
 .logo {
-    position: absolute;
-    top: 50%;/* centra verticalmente */
-    left: 73px;/* separación desde la izquierda */
-    transform: translateY(-50%);/* ajusta para que quede centrado */
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid white;
+  width: 50px;
+  height: auto;
 }
 
-header h1 {
-    font-size: 3rem;
+.logo-text {
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 1.8rem;
+  color: #CFA255;
+}
+
+header a {
+  color: #E0E0E0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: #CFA255;
+}
+
+/* ========== SUB-MENU ========== */
+.sub-menu {
+  background-color: #2C2C2C;
+  border-bottom: 1px solid #444;
+}
+
+.sub-menu .nav-link {
+  color: #E0E0E0;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.sub-menu .nav-link:hover,
+.sub-menu .nav-link.active {
+  color: #CFA255;
+  border-bottom: 2px solid #CFA255;
+}
+
+/* ========== TARJETAS ========== */
+.card-custom {
+  background-color: #666666;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.8rem;
+}
+
+.card-text {
+  color: #E0E0E0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #000000;
+  color: #E0E0E0;
+  font-size: 0.95rem;
+}
+
+footer .logo {
+  width: 45px;
+}
+
+footer .logo-text {
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 1.6rem;
+  color: #CFA255;
+}
+
+footer .slogan {
+  font-style: italic;
+  margin-top: 8px;
+  color: #FFFFFF;
+}
+
+.enlaces-title {
+  color: #CFA255;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 6px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #E0E0E0;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #CFA255;
+}
+
+/* ========== ICONOS SOCIALES ========== */
+.social-icons a {
+  color: #CFA255;
+  font-size: 1.6rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #FFFFFF;
+}
+
+/* ========== COPYRIGHT ========== */
+footer .copyright {
+  font-size: 0.85rem;
+  color: #E0E0E0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .card-img {
+    height: 150px;
+  }
+
+  footer .row {
     text-align: center;
+  }
+
+  footer .logo-text {
+    font-size: 1.3rem;
+  }
 }
 
-main {
-    flex: 1;
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
 }
-
-.Contenedor-HR, .Contenedor-Grados{
-    border-radius: 5px;
-    border: 1px solid rgb(150, 147, 147);
-    margin: 2rem;
-    padding: 20px;
-}
-
-.Contenedor-HR p,
-.Contenedor-Grados p{
-    /* margin-left: 30% ; */
-    text-align: center;
-    /* padding: 0 10px 10px 10px; */
-}
-
-.Contenedor-HR h4,
-.Contenedor-Grados h4 {
-    text-align: center;
-
-}
-
-a .Contenedor-HR:hover,
-a .Contenedor-Grados:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-}
-
-img {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    
-}
-
-
-
-
-
-
