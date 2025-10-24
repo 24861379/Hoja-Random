@@ -4,13 +4,13 @@ html {
 
 body {
     margin: 0;
-    background-color: #efefef;
+    background-color: #2c2c2c;
 }
 
 /* Banner superior */
 .banner-large {
-    background-color: white; 
-    color: black;
+    background-color: #666666;
+    color: white;
     padding: 1rem;
     border: black 1px solid;
     border-radius: 10px;
@@ -22,7 +22,7 @@ body {
 
 /* Banner inferior */
 .banner-small {
-    background-color: white;
+    background-color: #666666;
     color: black;
     padding: 1rem;
     border: black 1px solid;
@@ -37,40 +37,99 @@ body {
     margin-bottom: 2rem;
 } */
 
-.btn, .btn-primary{
+.btn,
+.btn-primary {
     width: 120px;
     margin: 1rem;
-    background-color: #52b906;
+    background-color: #cfa255;
 }
 
 .btn-primary:hover,
 .btn-primary:focus:active {
-    background-color: #45a049;
-    border-color: #45a049;
+    background-color: #A87F35;
+    border-color: #A87F35;
+}
+
+.btn-secondary:hover {
+    background-color: #A87F35;
+}
+
+.banner-large {
+    width: auto;
+    max-width: 75%;
+    /* un poco más estrecho que el superior */
+    padding: 1rem;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    word-break: break-word;
+    /* padding: 2rem; */
+    /* Reducir altura en pantallas pequeñas */
+    /* max-width: 85%; */
+    /* Más estrecho en pantallas pequeñas */
+    /* margin-bottom: 2rem; */
+    /* Espaciado adicional en pantallas pequeñas */
+}
+
+.home-container {
+    position: fixed;
+    bottom: 20px;
+    /* distancia desde el borde inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    z-index: 5;
+    /* visible pero no encima de todo */
+}
+
+.home-button {
+    background-color: #666666;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-button:hover {
+    background-color: #555555;
+}
+
+.home-button i {
+    color: #FFFFFF;
+    font-size: 22px;
 }
 
 /* Adaptabilidad */
 @media (max-width: 768px) {
     .banner-small {
         width: auto;
-        max-width: 90%;/* más ancho que el inferior */
+        max-width: 90%;
+        /* más ancho que el inferior */
         padding: 1.5rem;
         margin: 1rem auto;
         box-sizing: border-box;
         word-break: break-word;
-        /* padding: 1.5rem; *//* Reducir espaciado en pantallas pequeñas */
-        /* max-width: 95%; *//* Más ancho en pantallas pequeñas */
+        /* padding: 1.5rem; */
+        /* Reducir espaciado en pantallas pequeñas */
+        /* max-width: 95%; */
+        /* Más ancho en pantallas pequeñas */
     }
 
-    .banner-large {
-        width: auto;
-        max-width: 75%;/* un poco más estrecho que el superior */
-        padding: 1rem;
-        margin: 1rem auto;
-        box-sizing: border-box;
-        word-break: break-word;
-        /* padding: 2rem; *//* Reducir altura en pantallas pequeñas */
-        /* max-width: 85%; *//* Más estrecho en pantallas pequeñas */
-        /* margin-bottom: 2rem; */ /* Espaciado adicional en pantallas pequeñas */
+    .home-button {
+        padding: 10px 12px;
+        font-size: 20px;
     }
+
+    .home-container {
+        bottom: 15px;
+        /* un poco más arriba en móviles */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 }
