@@ -1,260 +1,166 @@
-html{
+html {
     font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
     margin: 0;
-    background-color: #efefef;
+    background-color: #2C2C2C;
 }
 
-header{
-    background-color: #364552;
-    color: white;
-    padding: 1rem 2rem;
+
+.modal-content {
+    background-color: #666666;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 0 50px 30px 50px;
 }
 
-header h1{
-    font-size: 3rem;
+.titulo {
+    margin: 20px;
+}
+
+#configModal .modal-title {
+    width: 100%;
     text-align: center;
 }
 
-#Settings{
-    width: 270px;
-    margin-top: 20px;
-    margin-left: 10px;
-    background-color: white;
-    border-radius: 0.5rem;
-    border: 1px solid black;
-    float: left;
-    padding: 10px;
+.opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-#Settings label {
-    display: inline;
-    margin-bottom: 5px;
-    font-size: 1rem;
-}
-
-#Settings select{
-    margin-top: 2px;
-    margin-bottom: 7px;
-}
-
-#Settings input{
-    margin-top: 5px;
-    margin-bottom: 7px;
-}
-
-input[type="checkbox" i]#AMenores {
-    background-color: initial;
+.opciones button {
+    background-color: #D9D9D9;
+    border-radius: 3px;
     cursor: pointer;
-    appearance: auto;
-    box-sizing: border-box;
-    margin-left: 25px;
-    padding: initial;
-    border: initial;
+    margin: 10px 10px;
 }
 
-input[type="checkbox" i]#ASostenidos {
-    background-color: initial;
-    cursor: pointer;
-    appearance: auto;
-    box-sizing: border-box;
-    margin-left: 45px;
-    padding: initial;
-    border: initial;
+.opciones button:hover{
+    background-color: #000000;
+    transition: all 0.2s ease-in;
 }
 
-input[type="checkbox" i]#ABemoles {
-    background-color: initial;
+.opciones button.activo{
+    background-color: #000;
+    color: #fff;
+}
+
+.acordes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.acordes div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.nombreAcordes {
+    text-align: left;
+    font-size: 16px;
+    min-width: 150px;
+}
+
+.acordes input[type="checkbox"] {
+    transform: scale(1.3);
     cursor: pointer;
-    appearance: auto;
-    box-sizing: border-box;
-    margin-left: 64px;
-    padding: initial;
-    border: initial;
+}
+
+.botonesAjustes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.BotonSecundario{
+    display: inline-block;
+    width: 149px;
+    height: 43px;
+    background-color: #8A6D3B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 43px;
+}
+
+.BotonSecundario:hover{
+    background-color: #B88944;
+    transition: all 0.2s ease-in;
+}
+
+.BotonPrimario{
+    width: 123px;
+    height: 43px;
+    background-color: #CFA255;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.BotonPrimario:hover{
+    background-color: #A87F35;
+    transition: all 0.2s ease-in;
+}
+
+
+#HojaRandom{
+    background-color: #666666;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    width: 500px;
 }
 
 .Boton{
-    width: 170px;
-    padding: 10;
-    border: 1px solid #52b906;
-    font-size: 15px;
-    background: #52b906;
-    color:white;
-    border-radius: 70px;
-    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: #CFA255;
+    color: #ffffff;
+    width: 175px;
+    height: 43px;
+    border-radius: 7px;
+    border: none;
     text-align: center;
-    box-sizing: border-box;
-    text-decoration: none;   
-    position: absolute;
-    float: left;
-    margin-top: 15px ;
-    margin-left: 325px;
+    padding: 0;
+    cursor: pointer;
+    /* line-height: 1; */
 }
 
 .Boton:hover{
-    background-color: #3f9204;
-    color: rgb(199, 192, 192);
-    transition: background 0.3s ease;
+    background-color: #8A6024;
+    transition: all 0.2s ease-in;
 }
 
-.Boton:active {
-    background-color: #45a049;
-}
-
-#HojaRandom{
-    width: 700px;
-    margin-top: 80px;
-    margin-left: 50px;
-    background-color: white;
-    border-radius: 0.5rem;
-    border: 1px solid black;
-    float: left;
-    padding: 20px;
-    font-size: 24px;
-    line-height: 1.5;
-}
-
-#HojaRandom div{
-    margin: 15px 0;
-    padding: 6px;
+.iconos-menu{
+    width: 148px;
+    height: 51px;
+    background-color: #666666;
+    text-align: center;
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
 }
 
-#HojaRandom div span {
-    margin: 0 40px;
-    
+.iconos-menu i{
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
 }
-
-#HojaRandom table {
-    width: 100%;
-    table-layout: fixed;
-}
-
-#HojaRandom td {
-    border-top: 1px solid #ccc;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    padding: 10px 20px;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 18px;
-    text-align: center;
-}
-
-/*Para dispositivos pequeños hasta 480px*/
-@media (max-width: 480px) {
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    #Settings {
-        width: 230px;
-        margin-left: 20px;
-    }
-
-    .Boton {
-        position: static;/*elimino valores predeterminados de position en el box-sizing*/
-        width: 160px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        margin-left: 145px;
-        margin-right: 150px;
-
-    }
-
-    #HojaRandom {
-        width: 320px;
-        margin-top: 10px;
-        margin-left: 15px;
-        margin-right: 20px;
-        margin-bottom: 10px;
-        padding: 15px;
-    }
-
-    #HojaRandom div span {
-        margin: 5px 10px;
-        font-size: 29px;
-    }
-}
-
-/*ajuste para disporsitivo con ancho maximo de 768px*/
-@media(min-width: 481px) and (max-width: 768px) {
-
-    header h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    #Settings {
-        width: 250px;
-        margin-left: 10px;
-    }
-
-    .Boton {
-        position:static;
-        width: 150px;
-        margin-left: 45px;
-        margin-top: 169px;
-        margin-bottom: 10px;
-        background-color: #62d410;
-    }
-
-    .Boton:active {
-        background-color: #45a049;
-    }
-
-    #HojaRandom {
-        width: 650px;
-        margin: 0 40px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
-
-    #HojaRandom div span {
-        margin: 0 45px;
-    }
-}
-
- @media (min-width: 769px)and (max-width: 1024px){
-header h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    #Settings {
-        width: 250px;
-        margin-left: 20px;
-    }
-
-    .Boton {
-        position: static;
-        width: 150px;
-        margin-left: 150px;
-        margin-top: 169px;
-        margin-bottom: 10px;
-        background-color: #62d410;
-    }
-
-    .Boton:active {
-        background-color: #45a049;
-    }
-
-    #HojaRandom {
-        width: 770px;
-        margin: 0 40px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-left: 100px;
-        margin-right: 50px;
-    }
-
-    #HojaRandom div span {
-        margin: 0 45px;
-    }
-} 
