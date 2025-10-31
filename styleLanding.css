@@ -38,27 +38,41 @@ header a {
   transition: color 0.3s;
 }
 
+.user {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
 header a:hover {
   color: #CFA255;
 }
 
 /* ========== SUB-MENU ========== */
-.sub-menu {
+.navbar {
   background-color: #2C2C2C;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #666666;
 }
 
-.sub-menu .nav-link {
+.navbar a{
+  font-size: 16px;
+}
+
+.navbar .nav-link {
   color: #E0E0E0;
   font-weight: 500;
   margin: 0 10px;
   transition: color 0.3s, border-bottom 0.3s;
 }
 
-.sub-menu .nav-link:hover,
-.sub-menu .nav-link.active {
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
   color: #CFA255;
   border-bottom: 2px solid #CFA255;
+}
+
+.navbar-toggler{
+  border: none;
+  background-color: #CFA255;
 }
 
 /* ========== TARJETAS ========== */
@@ -87,6 +101,10 @@ header a:hover {
 
 .card-body {
   padding: 1.5rem;
+}
+
+.card-body h3{
+  color: #FFFFFF;
 }
 
 .card-title {
@@ -168,6 +186,7 @@ footer .copyright {
   font-size: 0.85rem;
   color: #E0E0E0;
 }
+
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
