@@ -16,3 +16,15 @@ main.container {
 footer {
     flex-shrink: 0;
 }
+
+.aviso{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+.aviso i{
+    font-size: 100px;
+    margin-bottom: 20px;
+}

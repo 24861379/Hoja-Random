@@ -34,7 +34,7 @@ body {
 /* Mostrar mensajes de error y acertación */
 .alert-success{
     background-color: #58DB5E;
-    color: #FFFFFF;
+    color: #000000;
     border: none;
 }
 

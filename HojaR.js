@@ -148,7 +148,7 @@ function setupSizeButtons() {
     });
 }
 
-// Mostrar modal automáticamente al cargar la página
+// Muestra el modal al cargar la página
 document.addEventListener('DOMContentLoaded', function () {
     var configModal = new bootstrap.Modal(document.getElementById('configModal'));
     configModal.show();
@@ -157,10 +157,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     document.getElementById('aplicarBtn').addEventListener('click', function () {
-        if (!tamanioSeleccionado) {
+        /* if (!tamanioSeleccionado) {
             alert("Debes seleccionar un tamaño antes de aplicar.");
             return;
-        }
+        } */
 
         GenerarMatriz();
         configModal.hide();
@@ -172,5 +172,5 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('aplicarBtn').addEventListener('click', function () {
     var modal = bootstrap.Modal.getInstance(document.getElementById('configModal'));
     modal.hide();
-    // Aquí puedes ejecutar el código que muestra la siguiente interfaz
+    // Aqui puedes ejecutar el código que muestra la siguiente interfaz
 });

@@ -124,6 +124,18 @@ body {
     width: 500px;
 }
 
+#HojaRandom table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#HojaRandom th, #HojaRandom td{
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
 .Boton{
     display: block;
     margin: 0 auto;

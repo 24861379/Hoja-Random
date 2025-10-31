@@ -1,28 +1,3 @@
-/* import continuarCurso from './continuarCurso.js';
-import cursosTerminados from './cursosTerminados.js';
-import diccionario from './diccionario.js';
-import guiaPrincipiantes from './guiaPrincipiantes.js';
-
-const home = document.getElementById('home');
-
-function renderHome() {
-    home.innerHTML = `
-        ${continuarCurso()}
-        ${cursosTerminados()}
-        ${diccionario()}
-        ${guiaPrincipiantes()}
-    `;
-}
-
-window.addEventListener('load', () => {
-    const hash = window.location.hash;
-    if (hash === '#home' || hash === '') {
-        renderHome();
-    }
-});
-
-renderComponent(); */
-
 const app = document.getElementById('app');
 
 function loadPage(pageName) {
