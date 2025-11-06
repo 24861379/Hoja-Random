@@ -1,0 +1,85 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    color: #ffffff;
+    background-color: #000000;
+    width: 512px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+section h2, button,a{
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 30px;
+}
+
+section .form-control{
+    width: 382px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #666666;
+    border: none;
+}
+
+.ayuda{
+  margin-left: 12%; 
+  cursor: pointer;
+  color: #ffffff; 
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.botones a{
+    background-color: #8A6D3B;
+    text-decoration: none;
+    color: #ffffff;
+    width: 149px;
+    height: 43px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.botones a:hover{
+    background-color: #B88944;
+    transition: all 0.3s ease;
+}
+
+.botones button {
+    background-color: #bb8d3f;
+    border: none;
+    color: #ffffff;
+    width: 149px;
+    height: 43px;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.botones button:hover {
+    background-color: #8f6b28;
+    transition: all 0.3s ease;
+}

@@ -18,7 +18,7 @@ function loadPage(pageName) {
 
 function getCurrentPageFromHash() {
     const hash = window.location.hash.replace('#', '');
-    return hash ? hash : 'continuarCurso'; // fallback por defecto
+    return hash ? hash : 'ejerciciosTeoria'; // fallback por defecto
 }
 
 function route() {
