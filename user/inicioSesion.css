@@ -85,7 +85,7 @@ section .form-control{
     padding: 0px;
 }
 
-.botones button:hover {
+.btn-primary:hover {
     background-color: #8f6b28;
     transition: all 0.3s ease;
 }
