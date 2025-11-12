@@ -8,11 +8,11 @@ export class escalaAb {
     }
 
     private crearArbol(): nodo {
-        const nodo1 = new nodo("Ab", "I");
-        const nodo2 = new nodo("Bbm", "ii");
+        const nodo1 = new nodo("A♭", "I");
+        const nodo2 = new nodo("B♭m", "ii");
         const nodo3 = new nodo("Cm", "iii");
-        const nodo4 = new nodo("Db", "IV");
-        const nodo5 = new nodo("Eb", "V");
+        const nodo4 = new nodo("D♭", "IV");
+        const nodo5 = new nodo("E♭", "V");
         const nodo6 = new nodo("Fm", "vi");
         const nodo7 = new nodo("G°", "vii°");
 
