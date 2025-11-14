@@ -17,11 +17,11 @@ import { escalaFs } from "./escalaFs.js";
 
 
 let grados: string[] = ["ii", "iii", "IV", "V", "vi", "vii°",]
-let notas: string[] = ["Cb", "C", "C#", "Db", "D", "Eb", "E", "F", "F#", "Gb", "G", "Ab", "A", "Bb", "B"]
+let notas: string[] = ["C♭", "C", "C♯", "D♭", "D", "E♭", "E", "F", "F♯", "G♭", "G", "A♭", "A", "B♭", "B"]
 let acordesDisponibles: string[] = [
-    "C", "C#", "Cb", "D", "D#", "Db", "E", "Eb", "F", "F#", "Gb", "G", "G#", "Ab", "A", "A#", "Bb", "B", "B#",
-    "Cm", "C#m", "Cbm", "Dm", "D#m", "Dbm", "Em", "Ebm", "Fm", "F#m", "Gm", "G#m", "Abm", "Am", "A#m", "Bbm", "Bm", "B#m",
-    "C°", "C#°", "D°", "D#°", "E°", "F°", "F#°", "G°", "G#°", "A°", "A#°", "B°", "B#°"
+    "C", "C♯", "C♭", "D", "D♯", "D♭", "E", "E♭", "F", "F♯", "G♭", "G", "G♯", "A♭", "A", "A♯", "B♭", "B", "B♯",
+    "Cm", "C♯m", "C♭m", "Dm", "D♯m", "D♭m", "Em", "E♭m", "Fm", "F♯m", "Gm", "G♯m", "A♭m", "Am", "A♯m", "B♭m", "Bm", "B♯m",
+    "C°", "C♯°", "D°", "D♯°", "E°", "F°", "F♯°", "G°", "G♯°", "A°", "A♯°", "B°", "B♯°"
 ];
   
 //let notas: string[] = ["C", "Cb", "D", "Db","Gb","C#","F","Bb","Eb","Ab", "G"]//PRUEBA
@@ -29,20 +29,20 @@ let acordesDisponibles: string[] = [
 //crea un mapeo de los árboles de lasescalas
 const arboles: { [key: string]: any } = {
     "C": new escalaC(),
-    "Cb": new escalaCb(),
+    "C♭": new escalaCb(),
     "D": new escalaD(),
-    "Db": new escalaDb(),
-    "Gb": new escalaGb(),
-    "C#": new escalaCs(),
+    "D♭": new escalaDb(),
+    "G♭": new escalaGb(),
+    "C♯": new escalaCs(),
     "F": new escalaF(),
-    "Bb": new escalaBb(),
-    "Eb": new escalaEb(),
-    "Ab": new escalaAb(),
+    "B♭": new escalaBb(),
+    "E♭": new escalaEb(),
+    "A♭": new escalaAb(),
     "G": new escalaG(),
     "A": new escalaA(),
     "E": new escalaE(),
     "B": new escalaB(),     
-    "F#": new escalaFs()
+    "F♯": new escalaFs()
 };
 
 // Función para generar una pregunta aleatoria
@@ -88,9 +88,9 @@ function mostrarOpciones(opciones: string[], correcta: string): void {
             boton.addEventListener("click", () => {
                 if (opcion === correcta) {
                     mostrarMensaje("¡Correcto!", true);
-                } /* else {
+                } else {
                     mostrarMensaje("Incorrecto. Intenta de nuevo.", false); // Muestra mensaje de error
-                } */
+                }
             });
 
             contenedorOpciones.appendChild(boton);

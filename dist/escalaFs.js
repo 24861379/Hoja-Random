@@ -4,13 +4,13 @@ export class escalaFs {
         this.raiz = this.crearArbol();
     }
     crearArbol() {
-        const nodo1 = new nodo("F#", "I");
-        const nodo2 = new nodo("G#m", "ii");
-        const nodo3 = new nodo("A#m", "iii");
+        const nodo1 = new nodo("F♯", "I");
+        const nodo2 = new nodo("G♯m", "ii");
+        const nodo3 = new nodo("A♯m", "iii");
         const nodo4 = new nodo("B", "IV");
-        const nodo5 = new nodo("C#", "V");
-        const nodo6 = new nodo("D#m", "vi");
-        const nodo7 = new nodo("E#°", "vii°");
+        const nodo5 = new nodo("C♯", "V");
+        const nodo6 = new nodo("D♯m", "vi");
+        const nodo7 = new nodo("E♯°", "vii°");
         nodo2.izquierda = nodo1;
         nodo2.derecha = nodo3;
         nodo6.izquierda = nodo5;

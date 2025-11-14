@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #FFFFFF;
+    background-color: #2C2C2C;
+}
+
+/* el main  cupa el espacio disponible*/
+main.container {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.aviso{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+.aviso i{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+/*
+=================================
+DICCIONARIO
+=================================
+*/
+.Diccionario{
+    background: #666666;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 80%px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.Diccionario li{
+    margin: 10px;
+}

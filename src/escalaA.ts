@@ -10,11 +10,11 @@ export class escalaA {
     private crearArbol(): nodo {
         const nodo1 = new nodo("A", "I");
         const nodo2 = new nodo("Bm", "ii");
-        const nodo3 = new nodo("C#m", "iii");
+        const nodo3 = new nodo("C♯m", "iii");
         const nodo4 = new nodo("D", "IV");
         const nodo5 = new nodo("E", "V");
-        const nodo6 = new nodo("F#m", "vi");
-        const nodo7 = new nodo("G#°", "vii°");
+        const nodo6 = new nodo("F♯m", "vi");
+        const nodo7 = new nodo("G♯°", "vii°");
 
         nodo2.izquierda = nodo1;
         nodo2.derecha = nodo3;

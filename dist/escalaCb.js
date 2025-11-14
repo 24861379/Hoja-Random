@@ -4,13 +4,13 @@ export class escalaCb {
         this.raiz = this.crearArbol();
     }
     crearArbol() {
-        const nodo1 = new nodo("Cb", "I");
-        const nodo2 = new nodo("Dbm", "ii");
-        const nodo3 = new nodo("Ebm", "iii");
-        const nodo4 = new nodo("Fb", "IV");
-        const nodo5 = new nodo("Gb", "V");
-        const nodo6 = new nodo("Abm", "vi");
-        const nodo7 = new nodo("Bb°", "vii°");
+        const nodo1 = new nodo("C♭", "I");
+        const nodo2 = new nodo("D♭m", "ii");
+        const nodo3 = new nodo("E♭m", "iii");
+        const nodo4 = new nodo("F♭", "IV");
+        const nodo5 = new nodo("G♭", "V");
+        const nodo6 = new nodo("A♭m", "vi");
+        const nodo7 = new nodo("B♭°", "vii°");
         nodo2.izquierda = nodo1;
         nodo2.derecha = nodo3;
         nodo6.izquierda = nodo5;

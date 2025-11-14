@@ -7,7 +7,7 @@ export class escalaF {
         const nodo1 = new nodo("F", "I");
         const nodo2 = new nodo("Gm", "ii");
         const nodo3 = new nodo("Am", "iii");
-        const nodo4 = new nodo("Bb", "IV");
+        const nodo4 = new nodo("B♭", "IV");
         const nodo5 = new nodo("C", "V");
         const nodo6 = new nodo("Dm", "vi");
         const nodo7 = new nodo("E°", "vii°");

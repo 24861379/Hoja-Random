@@ -14,28 +14,28 @@ import { escalaE } from "./escalaE.js";
 import { escalaB } from "./escalaB.js";
 import { escalaFs } from "./escalaFs.js";
 let grados = ["ii", "iii", "IV", "V", "vi", "vii°",];
-let notas = ["Cb", "C", "C#", "Db", "D", "Eb", "E", "F", "F#", "Gb", "G", "Ab", "A", "Bb", "B"];
+let notas = ["C♭", "C", "C♯", "D♭", "D", "E♭", "E", "F", "F♯", "G♭", "G", "A♭", "A", "B♭", "B"];
 let acordesDisponibles = [
-    "C", "C#", "Cb", "D", "D#", "Db", "E", "Eb", "F", "F#", "Gb", "G", "G#", "Ab", "A", "A#", "Bb", "B", "B#",
-    "Cm", "C#m", "Cbm", "Dm", "D#m", "Dbm", "Em", "Ebm", "Fm", "F#m", "Gm", "G#m", "Abm", "Am", "A#m", "Bbm", "Bm", "B#m",
-    "C°", "C#°", "D°", "D#°", "E°", "F°", "F#°", "G°", "G#°", "A°", "A#°", "B°", "B#°"
+    "C", "C♯", "C♭", "D", "D♯", "D♭", "E", "E♭", "F", "F♯", "G♭", "G", "G♯", "A♭", "A", "A♯", "B♭", "B", "B♯",
+    "Cm", "C♯m", "C♭m", "Dm", "D♯m", "D♭m", "Em", "E♭m", "Fm", "F♯m", "Gm", "G♯m", "A♭m", "Am", "A♯m", "B♭m", "Bm", "B♯m",
+    "C°", "C♯°", "D°", "D♯°", "E°", "F°", "F♯°", "G°", "G♯°", "A°", "A♯°", "B°", "B♯°"
 ];
 const arboles = {
     "C": new escalaC(),
-    "Cb": new escalaCb(),
+    "C♭": new escalaCb(),
     "D": new escalaD(),
-    "Db": new escalaDb(),
-    "Gb": new escalaGb(),
-    "C#": new escalaCs(),
+    "D♭": new escalaDb(),
+    "G♭": new escalaGb(),
+    "C♯": new escalaCs(),
     "F": new escalaF(),
-    "Bb": new escalaBb(),
-    "Eb": new escalaEb(),
-    "Ab": new escalaAb(),
+    "B♭": new escalaBb(),
+    "E♭": new escalaEb(),
+    "A♭": new escalaAb(),
     "G": new escalaG(),
     "A": new escalaA(),
     "E": new escalaE(),
     "B": new escalaB(),
-    "F#": new escalaFs()
+    "F♯": new escalaFs()
 };
 function generarPregunta() {
     const grado = grados[Math.floor(Math.random() * grados.length)];

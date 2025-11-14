@@ -1,0 +1,119 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    color: #ffffff;
+    background-color: #000000;
+    width: 512px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login-container {
+    position: relative;
+    padding-top: 60px;
+    overflow: visible;
+}
+
+section h2, button,a{
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 30px;
+}
+
+section .form-control{
+    width: 382px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+.ayuda{
+  margin-left: 12%; 
+  cursor: pointer;
+  color: #ffffff; 
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.botones a{
+    background-color: #8A6D3B;
+    text-decoration: none;
+    color: #ffffff;
+    width: 149px;
+    height: 43px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.botones a:hover{
+    background-color: #B88944;
+    transition: all 0.3s ease;
+}
+
+.botones button {
+    background-color: #bb8d3f;
+    border: none;
+    color: #ffffff;
+    width: 149px;
+    height: 43px;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.btn-primary:hover {
+    background-color: #8f6b28;
+    transition: all 0.3s ease;
+}
+
+.invalid-feedback{
+    color: #E53935;
+    font-size: 16px;
+    border: none;
+    width: 382px;
+    margin: -25px auto 20px;
+}
+
+.semicirculo {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 80px;
+    background-color: #0c0c0c;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user {
+    font-size: 38px;
+    color: #ffffff;
+}

@@ -10,7 +10,7 @@ export class escalaG {
         const nodo4 = new nodo("C", "IV");
         const nodo5 = new nodo("D", "V");
         const nodo6 = new nodo("Em", "vi");
-        const nodo7 = new nodo("F#°", "vii°");
+        const nodo7 = new nodo("F♯°", "vii°");
         nodo2.izquierda = nodo1;
         nodo2.derecha = nodo3;
         nodo6.izquierda = nodo5;

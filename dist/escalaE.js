@@ -5,12 +5,12 @@ export class escalaE {
     }
     crearArbol() {
         const nodo1 = new nodo("E", "I");
-        const nodo2 = new nodo("F#m", "ii");
-        const nodo3 = new nodo("G#m", "iii");
+        const nodo2 = new nodo("F♯m", "ii");
+        const nodo3 = new nodo("G♯m", "iii");
         const nodo4 = new nodo("A", "IV");
         const nodo5 = new nodo("B", "V");
-        const nodo6 = new nodo("C#m", "vi");
-        const nodo7 = new nodo("D#°", "vii°");
+        const nodo6 = new nodo("C♯m", "vi");
+        const nodo7 = new nodo("D♯°", "vii°");
         nodo2.izquierda = nodo1;
         nodo2.derecha = nodo3;
         nodo6.izquierda = nodo5;

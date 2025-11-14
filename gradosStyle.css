@@ -31,6 +31,18 @@ body {
     width: 50%;
 }
 
+/* Mostrar mensajes de error y acertación */
+.alert-success{
+    background-color: #58DB5E;
+    color: #000000;
+    border: none;
+}
+
+.alert-danger {
+    background-color: #E53935;
+    color: #FFFFFF;
+    border:none;
+}
 /* Espaciado entre banners */
 /* .row.my-4 {
     margin-top: 2rem;
@@ -42,6 +54,7 @@ body {
     width: 120px;
     margin: 1rem;
     background-color: #cfa255;
+    border: none;
 }
 
 .btn-primary:hover,
